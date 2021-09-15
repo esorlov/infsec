@@ -1,0 +1,5 @@
+#!/bin/sh
+FILE=lab1-report.$(date +%Y.%m.%d-%H:%M:%S).txt
+cat /etc/passwd | reprep | base64 > $FILE
+echo " *** Ваш отчет по лабораторной находится в файле $FILE. *** "
+echo " *** Его необходимо загрузить в Moodle. *** "
