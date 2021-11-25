@@ -4,7 +4,7 @@ clean:
 	rm -f macapp
 install:
 	install -m 755 macapp /usr/local/bin
-	install -m 640 macapp.service /etc/systemd/system/
+	install -m 644 macapp.service /etc/systemd/system/
 	systemctl daemon-reload
 uninstall:
 	rm -f /usr/local/bin/macapp
