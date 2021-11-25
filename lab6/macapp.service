@@ -1,0 +1,7 @@
+[Unit]
+Description=Mandatory Access Control testing daemon
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/macapp
+[Install]
+WantedBy=multi-user.target
