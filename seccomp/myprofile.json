@@ -1,0 +1,21 @@
+{
+        "defaultAction": "SCMP_ACT_ALLOW",
+        "syscalls": [
+                {
+                        "name": "mkdir",
+                        "action": "SCMP_ACT_ERRNO"
+                },
+                {
+                        "name":"chmod",
+                        "action":"SCMP_ACT_KILL"
+                },
+
+                {
+                        "names": [
+                                "socket",
+                                "connect"
+                        ],
+                        "action": "SCMP_ACT_ERRNO"
+                }
+        ]
+}
